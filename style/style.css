@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 200px;
+  object-fit: contain;
+  max-width: 30%;
+}
+
+.talkbubble {
+  position: relative;
+
+  width: 300px;
+  height: 125px;
+
+  padding: 10px;
+  border-radius: 5px;
+  border: solid lightblue;
+  background: lightblue;
+}
+
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+
+  border-top: 13px solid transparent;
+  border-right: 26px solid lightblue;
+  border-bottom: 13px solid transparent;
+}
+
+.talkbubble .talktext {
+  position: inherit;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  resize: none;
+}
